@@ -27,11 +27,21 @@
     margin-top: auto;
 }
 
+/* ---- Navbar ---- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* ---- Contenu principal ---- */
 
 .main-content {
     flex: 1;
-    padding: 20px;
-    height: 100vh;
+    padding: 15px;
     overflow-y: auto;
+    max-width: 670px;
+    margin: 0 auto;
+    height: 100vh;
 }

@@ -47,7 +47,6 @@
 }
 
 .info-list span {
-    font-family: var(--font-body);
     font-size: 14px;
     color: var(--color-text-primary);
     letter-spacing: -0.3px;
@@ -96,7 +95,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-body);
     font-weight: 500;
     letter-spacing: -0.3px;
     text-decoration: none;
@@ -115,4 +113,59 @@
 .btn-mail {
     flex: 0 0 48px;
     background-color: var(--color-btn-mail-bg);
+}
+
+
+/* ---- Navbar ---- */
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__left i {
+    font-size: 31px;
+    color: var(--color-orange-primary);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: var(--color-text-secondary);
+}
+
+.nav-links a:hover {
+    transition: color 0.3s;
+    color: var(--color-text-primary);
+}
+
+a.btn-contact {
+    background-color: var(--color-text-primary);
+    padding: 9px 13px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-bg);
+    transition: opacity 0.3s;
+}
+
+a.btn-contact:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
 }
