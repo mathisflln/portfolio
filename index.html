@@ -3,18 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mathis Follin</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Habibi&display=swap" rel="stylesheet">
+
+    <!-- Icônes -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+
+    <!-- Styles du projet, chargés dans l'ordre : variables -> base -> layout -> composants -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
+
     <div class="layout">
-        <div class="sidebar">
-            Mathis FOLLIN
-        </div>
-        
-        <div class="main-content">
-            Étudiant ingénieur
-        </div>
+
+        <aside class="sidebar">
+
+            <!-- Profil -->
+            <img class="sidebar__profile-img" src="assets/photo.png" alt="Photo de profil de Mathis Follin">
+            <p class="sidebar__name">Mathis Follin</p>
+            <p class="sidebar__job">Ingénieur MLOps et Data Management</p>
+            <p>Étudiant en école d'ingénieur spécialisé en Informatique, Télécommunications et Réseaux</p>
+
+            <hr>
+
+            <!-- Contact -->
+            <address class="info-list-wrapper">
+                <ul class="info-list">
+                    <li>
+                        <i class="ph-duotone ph-map-pin"></i>
+                        <span>Paris, France</span>
+                    </li>
+                    <li>
+                        <i class="ph-duotone ph-envelope-simple"></i>
+                        <span>mathis.follin@free.fr</span>
+                    </li>
+                    <li>
+                        <i class="ph-duotone ph-phone"></i>
+                        <span>+33 6 95 50 70 56</span>
+                    </li>
+                </ul>
+            </address>
+
+            <!-- Bas de sidebar : réseaux sociaux + boutons d'action -->
+            <div class="sidebar__bottom">
+
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.linkedin.com/in/mathis-follin" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+                            <i class="ph-duotone ph-linkedin-logo"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/mathisflln" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+                            <i class="ph-duotone ph-github-logo"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="btn-group">
+                    <a class="btn-cv" href="assets/cv.pdf" download>
+                        <i class="ph-duotone ph-download-simple"></i>
+                        <span>Télécharger mon CV</span>
+                    </a>
+                    <a class="btn-mail" href="mailto:mathis.follin@free.fr" aria-label="Envoyer un mail">
+                        <i class="ph-duotone ph-envelope-simple"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+        <!-- CONTENU PRINCIPAL -->
+        </main>
+
     </div>
 
     <script src="script.js"></script>
