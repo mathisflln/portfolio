@@ -8,8 +8,14 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    height: 100%;
     margin: 0;
+    overflow: hidden;
+}
+
+body {
     background-color: var(--color-bg);
     font-family: var(--font-body);
 }
@@ -20,6 +26,17 @@ p {
     line-height: 22.4px;
     color: var(--color-text-secondary);
     margin: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.8px;
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--color-text-primary);
+    line-height: 48px;
+    margin: 0 0 12px;
 }
 
 hr {

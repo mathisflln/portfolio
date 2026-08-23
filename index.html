@@ -12,6 +12,7 @@
 
     <!-- Icônes -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
 
     <!-- Styles du projet, chargés dans l'ordre : variables -> base -> layout -> composants -->
     <link rel="stylesheet" href="css/variables.css">
@@ -82,24 +83,53 @@
         </aside>
 
         <main class="main-content">
+            <div class="main-content__inner">
         
-            <!-- Navbar -->
-            <nav class="navbar">
-                <div class="navbar__left">
-                    <i class="ph-duotone ph-user-circle"></i>
-                    <ul class="nav-links">
-                        <li><a href="">Expériences</a></li>
-                        <li><a href="">Formation</a></li>
-                        <li><a href="">Compétences</a></li>
-                    </ul>
-                </div>
-                    <a class="btn-contact" href="mailto:mathis.follin@free.fr">
-                        <i class="ph-duotone ph-chat-circle"></i>
-                        <span>Me contacter</span>
-                    </a>
-            </nav>
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <div class="navbar__left">
+                        <i class="ph-duotone ph-user-circle"></i>
+                        <ul class="nav-links">
+                            <li><a href="">Expériences</a></li>
+                            <li><a href="">Formation</a></li>
+                            <li><a href="">Compétences</a></li>
+                        </ul>
+                    </div>
+                        <a class="btn-contact" href="mailto:mathis.follin@free.fr">
+                            <i class="ph-duotone ph-chat-circle"></i>
+                            <span>Me contacter</span>
+                        </a>
+                </nav>
 
-            <!-- Contenu principal -->
+                <!-- Contenu principal -->
+
+                <div class="hero">
+                    <img class="hero__profile" src="assets/profil.png" alt="memoji de profil">
+
+                    <h1>Ingénieur en Informatique et Réseaux</h1>
+
+                    <p class="hero__subtitle">
+                        Spécialisé en MLOps et Data anfin d'automatiser le déployement de modèle de Machine Learning.
+                    </p>
+
+                    <a class="btn-xp">
+                        <div class="avatars">
+                            <span class="avatar">
+                                <img src="assets/fah-logo.jpeg" alt="Logo FAH">
+                            </span>
+                            <span class="avatar">
+                                <img src="assets/mbda-logo.jpeg" alt="Logo MBDA">
+                            </span>
+                            <span class="avatar">
+                                <img src="assets/thales-logo.jpeg" alt="Logo Thales">
+                            </span>
+                        </div>
+                        <span>Voir les expériences</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
 
         </main>
 
