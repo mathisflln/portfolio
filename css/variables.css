@@ -1,0 +1,21 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+:root {
+  /* Couleurs */
+  --color-bg: #FBF4F0;
+  --color-text-primary: #1A0A06;
+  --color-text-secondary: #1A0A0699;
+  --color-border: #E3DCD8;
+  --color-btn-mail-bg: #EEEBE3;
+  --color-icon-social: #837A76;
+
+  /* Typographie */
+  --font-heading: "Habibi", serif;
+  --font-body: "Geist", sans-serif;
+
+  /* Layout */
+  --sidebar-width: 300px;
+  --sidebar-padding: 24px;
+}

@@ -1,0 +1,38 @@
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  line-height: 22.4px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 25px 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}

@@ -1,0 +1,37 @@
+/* ==========================================================================
+   LAYOUT
+   Structure générale de la page : disposition en deux colonnes
+   (sidebar fixe + contenu principal).
+   ========================================================================== */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ---- Sidebar ---- */
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  padding: var(--sidebar-padding);
+  border-right: solid 1px var(--color-border);
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__bottom {
+  margin-top: auto;
+}
+
+/* ---- Contenu principal ---- */
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
