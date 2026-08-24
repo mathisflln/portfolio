@@ -115,7 +115,6 @@
     background-color: var(--color-btn-mail-bg);
 }
 
-
 /* ---- Navbar ---- */
 
 .navbar a {
@@ -168,4 +167,69 @@ a.btn-contact {
 a.btn-contact:hover {
     transition: opacity 0.3s;
     opacity: 0.8;
+}
+
+/* ---- Hero section ---- */
+
+.hero {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 120px 45px;
+    text-align: center;
+}
+
+.hero__profile {
+    display: block;
+    width: 130px;
+    height: 130px;
+    max-width: none;
+    object-fit: cover;
+    margin: 0 auto 24px;
+}
+
+.hero__subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+}
+
+.btn-xp {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    padding: 14px 16px;
+    background-color: var(--color-btn-mail-bg);
+    width: fit-content;
+    margin: 30px auto;
+    font-weight: 500;
+}
+
+.avatars {
+    display: inline-flex;
+}
+
+.avatar {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+.avatar:not(:first-child) {
+    margin-left: -12px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn-xp i {
+    margin-left: 20px;
+    font-size: 16px;
 }
