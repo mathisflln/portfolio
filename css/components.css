@@ -174,7 +174,7 @@ a.btn-contact:hover {
 .hero {
     max-width: 550px;
     margin: 0 auto;
-    padding: 120px 45px;
+    padding: 120px 45px 50px;
     text-align: center;
 }
 
@@ -233,4 +233,53 @@ a.btn-contact:hover {
 .btn-xp i {
     margin-left: 20px;
     font-size: 16px;
+}
+
+/* Education */
+
+.education {
+    padding-bottom: 30px;
+    padding-top: 12px;
+}
+
+.education__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.education__degree {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    font-weight: 300;
+    margin-bottom: 0;
+    max-width: 400px;
+}
+
+.education__dates {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: var(--color-text-secondary);
+}
+
+.education__school {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+
+.education__description {
+    padding: 12px 0;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    line-height: 19.6px;
+    max-width: 400px;
 }
