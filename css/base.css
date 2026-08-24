@@ -62,3 +62,8 @@ img {
 address {
     font-style: normal;
 }
+
+section {
+    padding-bottom: 30px;
+    padding-top: 12px;
+}
