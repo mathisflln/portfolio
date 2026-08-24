@@ -108,11 +108,23 @@
     font-size: 14px;
     background-color: var(--color-text-primary);
     color: var(--color-bg);
+    transition: opacity 0.3s;
+}
+
+.btn-cv:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
 }
 
 .btn-mail {
     flex: 0 0 48px;
     background-color: var(--color-btn-mail-bg);
+    transition: all 0.3s ease;
+}
+
+.btn-mail:hover {
+    transition: all 0.3s ease;
+    background-color: var(--color-hover);
 }
 
 /* ---- Navbar ---- */
@@ -204,6 +216,14 @@ a.btn-contact:hover {
     margin: 30px auto;
     font-weight: 500;
     letter-spacing: -0.3px;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-xp:hover {
+    transition: all 0.3s;
+    background-color: var(--color-hover);
 }
 
 .avatars {
@@ -236,11 +256,6 @@ a.btn-contact:hover {
 }
 
 /* Education */
-
-.education {
-    padding-bottom: 30px;
-    padding-top: 12px;
-}
 
 .education__list {
     list-style: none;
@@ -278,6 +293,112 @@ a.btn-contact:hover {
 
 .education__description {
     padding: 12px 0;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    line-height: 19.6px;
+    max-width: 400px;
+}
+
+/* Expériences */
+
+.experience__list {
+    list-style: none;
+    padding: 8px 0 0;
+    margin: 0;
+}
+
+.experience__item {
+    display: flex;
+    position: relative;
+    padding-top: 16px;
+}
+
+.experience__logo-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.experience__logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.experience__item:not(:last-child) .experience__logo-col::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--color-border);
+}
+
+.experience__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.experience__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    margin-bottom: 2px;
+    margin-top: -2px;
+}
+
+.experience__role {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    font-weight: 300;
+    margin: auto 0;
+    max-width: 400px;
+    margin-bottom: -1px;
+}
+
+.experience__roles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+    margin: auto 0;
+}
+
+.experience__dates {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: var(--color-text-secondary);
+}
+
+.experience__company {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+
+.experience__contract {
+    position: relative;
+    color: var(--color-text-secondary);
+    margin-left: 14px;
+}
+
+.experience__contract::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: var(--color-text-secondary);
+}
+
+.experience__description {
+    padding: 12px 0 20px;
     font-size: 14px;
     letter-spacing: -0.3px;
     line-height: 19.6px;
