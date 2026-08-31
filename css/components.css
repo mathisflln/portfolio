@@ -405,6 +405,76 @@ a.btn-contact:hover {
     max-width: 400px;
 }
 
+/* Compétences/Skills */
+
+.skills__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.skills__item {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: var(--color-text-primary);
+    padding: 6px 12px;
+    background-color: var(--color-btn-mail-bg);
+}
+
+.tools {
+    color: var(--color-text-primary);
+    padding-top: 34px;
+    padding-bottom: 16px;
+}
+
+.tools__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.tools__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools__item img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.tools__tooltip {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    margin-bottom: 8px;
+    padding: 2px 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-btn-mail-bg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tools__item:hover .tools__tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
 /* Langues */
 
 .languages__list {
@@ -442,10 +512,10 @@ a.btn-contact:hover {
 .languages__flag-wrapper::after {
     content: "";
     position: absolute;
-    inset: 0; /* couvre tout le wrapper */
+    inset: 0;
     border-radius: 6px;
     box-shadow: inset 2px 2px 6px 0 rgba(0, 0, 0, 0.1), inset -2px -2px 6px 0 rgba(0, 0, 0, 0.1);
-    pointer-events: none; /* n'interfère pas avec d'éventuels clics/liens */
+    pointer-events: none;
     border: solid 1px var(--color-icon-social) ;
 }
 
